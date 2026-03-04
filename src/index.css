@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 214 40% 8%;
+    --foreground: 210 40% 96%;
+
+    --card: 214 35% 13%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 214 35% 13%;
+    --popover-foreground: 210 40% 96%;
+
+    /* 🔵 Primary (Modern Blue) */
+    --primary: 210 50% 40%; /* #336699 */
+    --primary-foreground: 210 40% 98%;
+
+    /* Slightly brighter blue for accents */
+    --secondary: 215 85% 55%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted blues */
+    --muted: 214 30% 18%;
+    --muted-foreground: 214 20% 65%;
+
+    --accent: 220 90% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 25% 20%;
+    --input: 214 25% 20%;
+    --ring: 215 85% 55%;
+
+    --radius: 0.75rem;
+
+    /* 🔵 Modern Blue Gradients */
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(210 50% 40%),
+      hsl(215 85% 55%)
+    );
+
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(215 85% 55%),
+      hsl(225 90% 65%)
+    );
+
+    --gradient-hero: linear-gradient(
+      180deg,
+      hsl(214 40% 8%) 0%,
+      hsl(214 45% 12%) 50%,
+      hsl(214 40% 8%) 100%
+    );
+
+    --shadow-glow: 0 0 40px hsl(215 85% 55% / 0.25);
+    --shadow-card: 0 4px 24px hsl(210 50% 10% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Space Grotesk", sans-serif;
+  }
+  .font-body {
+    font-family: "Inter", sans-serif;
+  }
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
