@@ -80,7 +80,7 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-display font-semibold text-sm uppercase tracking-widest">
+          <span className="text-primary font-display font-semibold text-[1.1rem] uppercase tracking-widest">
             Why Rise Bet
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold mt-3">
