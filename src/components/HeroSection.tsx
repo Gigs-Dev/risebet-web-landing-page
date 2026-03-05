@@ -75,24 +75,24 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="font-display text-[2.5rem] sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 pl-4">
+          <h1 className="font-display text-[2.5rem] sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Predict. Trade. <br />
             <span className="text-gradient">Cash Out Big.</span>
           </h1>
 
-          <p className="text-[1rem] text-muted-foreground max-w-lg mb-8 pl-5">
-            Experience the thrill of virtual chart trading. Buy UP or Sell DOWN
-            on live charts, win up to 1.5x your stake in seconds, and withdraw
+          <p className="text-[1rem] text-muted-foreground max-w-lg mb-8">
+            Experience the thrill of virtual chart trading. Trade on live
+            charts, win up to 1.5x your stake in seconds, and withdraw
             instantly.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-12 pl-5">
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button
               size="sm"
               className="gradient-primary font-display font-semibold gap-2 text-base h-14 px-8 shadow-glow"
             >
               <Download className="8 h-5" />
-              Download APK
+              Download App
             </Button>
             <Button
               size="sm"
@@ -105,7 +105,7 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-3 gap-6 pl-5 items-center text-center justify-center">
+          <div className="grid grid-cols-3 gap-6 items-center text-center justify-center">
             {[
               { icon: Users, label: "1K+", sub: "Active players" },
               { icon: TrendingUp, label: "₦5M+", sub: "Won daily" },

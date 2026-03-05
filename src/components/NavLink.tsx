@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <Button className="gradient-primary font-display font-semibold gap-2">
             <Download className="w-4 h-4" />
-            Download APK
+            Download App
           </Button>
         </div>
 
@@ -60,7 +60,7 @@ const Navbar = () => {
               ))}
               <Button className="gradient-primary font-display font-semibold gap-2 mt-2">
                 <Download className="w-4 h-4" />
-                Download APK
+                Download App
               </Button>
             </div>
           </motion.div>
