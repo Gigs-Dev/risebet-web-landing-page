@@ -81,7 +81,7 @@ const FeaturesSection = () => {
           className="text-center mb-16"
         >
           <span className="text-primary font-display font-semibold text-[1.1rem] uppercase tracking-widest">
-            Why Rise Bet
+            Why RiseBet
           </span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold mt-3">
             Everything You Need to <span className="text-gradient">Win</span>
