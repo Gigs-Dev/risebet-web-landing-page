@@ -90,9 +90,12 @@ const HeroSection = () => {
             <Button
               size="sm"
               className="gradient-primary font-display font-semibold gap-2 text-base h-14 px-8 shadow-glow"
+              asChild
             >
-              <Download className="8 h-5" />
-              Download App
+              <a href="/app.apk" download="RiseBet.apk">
+                <Download className="8 h-5" />
+                Download App
+              </a>
             </Button>
             <Button
               size="sm"

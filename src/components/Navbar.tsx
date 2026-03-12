@@ -37,9 +37,14 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button className="gradient-primary font-display font-semibold gap-2">
-            <Download className="w-4 h-4" />
-            Download App
+          <Button
+            className="gradient-primary font-display font-semibold gap-2"
+            asChild
+          >
+            <a href="/app.apk" download="RiseBet.apk">
+              <Download className="w-4 h-4" />
+              Download App
+            </a>
           </Button>
         </div>
 

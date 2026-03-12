@@ -65,12 +65,18 @@ const DownloadCTA = () => {
               Ready to Start Winning?
             </h2>
             <p className="text-foreground/80 max-w-md mx-auto mb-8">
-              Download the Rise Bet app now and get started with as little as ₦500.
-              Your first trade is just seconds away.
+              Download the Rise Bet app now and get started with as little as
+              ₦500. Your first trade is just seconds away.
             </p>
-            <Button size="lg" className="bg-[#ffffff] text-primary hover:bg-background/300 font-display font-semibold h-14 px-10 gap-2 text-base">
-              <Download className="w-5 h-5" />
-              Download App Now
+            <Button
+              size="lg"
+              className="bg-[#ffffff] text-primary hover:bg-background/300 font-display font-semibold h-14 px-10 gap-2 text-base"
+              asChild
+            >
+              <a href="/app.apk" download="RiseBet.apk">
+                <Download className="w-5 h-5" />
+                Download App Now
+              </a>
             </Button>
           </div>
         </motion.div>

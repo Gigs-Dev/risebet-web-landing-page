@@ -3,9 +3,24 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const steps = [
-  { icon: Share2, num: "1", title: "Share Your Code", desc: "Send your unique referral code to friends" },
-  { icon: UserPlus, num: "2", title: "Friend Signs Up", desc: "They create an account using your code" },
-  { icon: DollarSign, num: "3", title: "Earn ₦500", desc: "Get rewarded when they make their first deposit" },
+  {
+    icon: Share2,
+    num: "1",
+    title: "Share Your Code",
+    desc: "Send your unique referral code to friends",
+  },
+  {
+    icon: UserPlus,
+    num: "2",
+    title: "Friend Signs Up",
+    desc: "They create an account using your code",
+  },
+  {
+    icon: DollarSign,
+    num: "3",
+    title: "Earn ₦500",
+    desc: "Get rewarded when they make their first deposit",
+  },
 ];
 
 const ReferralSection = () => {
@@ -26,7 +41,9 @@ const ReferralSection = () => {
             Refer & <span className="text-gradient">Earn</span>
           </h2>
           <p className="text-muted-foreground mt-3 max-w-md mx-auto">
-            Invite friends and earn <span className="text-primary font-semibold">₦500</span> for each successful referral. No limits.
+            Invite friends and earn{" "}
+            <span className="text-primary font-semibold">₦500</span> for each
+            successful referral. No limits.
           </p>
         </motion.div>
 
@@ -53,8 +70,14 @@ const ReferralSection = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="gradient-primary font-display font-semibold h-14 px-10 shadow-glow">
-            Download & Start Referring Now
+          <Button
+            size="lg"
+            className="gradient-primary font-display font-semibold h-14 px-10 shadow-glow"
+            asChild
+          >
+            <a href="/app.apk" download="RiseBet.apk">
+              Download & Start Referring Now
+            </a>
           </Button>
         </div>
       </div>
