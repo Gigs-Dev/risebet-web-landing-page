@@ -73,7 +73,7 @@ const DownloadCTA = () => {
               className="bg-[#ffffff] text-primary hover:bg-background/300 font-display font-semibold h-14 px-10 gap-2 text-base"
               asChild
             >
-              <a href="/app.apk" download="RiseBet.apk">
+              <a href="https://github.com/Gigs-Dev/risebet-web-landing-page/releases/download/v1.0/app.apk" download="RiseBet.apk">
                 <Download className="w-5 h-5" />
                 Download App Now
               </a>
