@@ -32,7 +32,7 @@ const Navbar = () => {
             className="gradient-primary font-display font-semibold gap-2"
             asChild
           >
-            <a href="https://github.com/Gigs-Dev/risebet-web-landing-page/releases/download/v1.0/app.apk" download="RiseBet.apk">
+            <a href="https://github.com/UdumiziSolomon/rising-sun-virtual-games/releases/download/risebet/application-86622a3b-2f21-43be-96bd-b53cd345683f.apk" download="RiseBet.apk">
               <Download className="w-4 h-4" />
               Download App
             </a>
